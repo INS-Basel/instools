@@ -18,6 +18,6 @@ Institute of Nursing Science at the University of Basel.
 And the development version from [GitHub](https://github.com/) with:
 
 ``` r
-# install.packages("remotes")
+# install.packages("remotes")s
 remotes::install_github("INS-Basel/hsrtools")
 ```
