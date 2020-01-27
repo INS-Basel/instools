@@ -1,0 +1,12 @@
+Package: hsrtools
+Type: Package
+Title: A Collection of Functions for Health Services research
+Version: 0.0.1.9000
+Authors@R: c(
+    person("Catherine", "Blatter", email = "catherine.blatter@unibas.ch", role = c("aut", "cre")))
+Description: hsrtools is a collection of functions written for questionnaire-studies in health services research.
+    They cover elements for creating easily-usable graphs for sharing with the survey-participants. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.0
