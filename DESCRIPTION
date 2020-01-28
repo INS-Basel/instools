@@ -6,6 +6,8 @@ Authors@R: c(
     person("Catherine", "Blatter", email = "catherine.blatter@unibas.ch", role = c("aut", "cre")))
 Description: hsrtools is a collection of functions written for questionnaire-studies in health services research.
     They cover elements for creating easily-usable graphs for sharing with the survey-participants. 
+URL: https://github.com/INS-Basel/hsrtools/
+BugReports: https://github.com/INS-Basel/hsrtools/issues
 License: MIT + file LICENSE
 Imports: 
     dplyr,
