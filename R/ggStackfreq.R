@@ -133,7 +133,7 @@ ggStackfreq <- function(data,
                                  name = NULL,
                                  drop = FALSE,
                                  labels = stringr::str_wrap(answer_labels, 18),
-                                 guide = ggplot2::guide_legend(reverse = TRUE))
+                                 guide = ggplot2::guide_legend(reverse = FALSE))
   }
 
   # add coord_flip and theme
