@@ -7,13 +7,13 @@
 
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
-[![Travis build
-status](https://travis-ci.org/INS-Basel/hsrtools.svg?branch=master)](https://travis-ci.org/INS-Basel/hsrtools)
 <!-- badges: end -->
 
 The goal of hsrtools is to combine and share functions with potential
 further use in one of the health services research projects at the
 Institute of Nursing Science at the University of Basel.
+
+*Be aware - this is potentially a fast changing repo*
 
 ## Installation
 
