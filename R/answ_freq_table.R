@@ -31,16 +31,16 @@ answ_freq_table <- function(data,
   # create a list to map over
   my_list <-
     data %>%
-    dplyr::select({{vars}}) %>% base::as.list(.data)
+    dplyr::select({{vars}}) %>% base::as.list()
 
 
   # create the base table
   base_table <-
-    purrr::map_dfr(my_list, .f = { ~forcats::as_factor(.x) %>% janitor::tabyl(.x,
+    purrr::map_dfr(my_list, .f = {~forcats::as_factor(.x) %>% janitor::tabyl(.x,
                                                                               show_na = FALSE,
                                                                               show_missing_levels = TRUE)},
                    .id = "variable") %>%
-    dplyr::rename(.data, "value" = ".") %>%
+    dplyr::rename("value" = ".") %>%
     dplyr::mutate(value = forcats::as_factor(value),
                   answer_fct = forcats::as_factor(value),
                   answer_opt_g = NA_character_,
@@ -48,7 +48,7 @@ answ_freq_table <- function(data,
                   answer_opt_i = NA_character_,
                   answer_color = NA_character_) %>%
     dplyr::mutate_at(.vars = vars(value, answer_fct),
-                     .funs = ~forcats::fct_inseq(.data))
+                     .funs = ~forcats::fct_inseq())
 
   # add all the optionals - expand factor levels
   if(!missing(expand_to)){
@@ -56,9 +56,9 @@ answ_freq_table <- function(data,
     base_table <-
       base_table %>%
       dplyr::mutate_at(.vars = vars(value, answer_fct),
-                       .funs = ~forcats::fct_expand(.data, expand_to)) %>%
+                       .funs = ~forcats::fct_expand(expand_to)) %>%
       dplyr::mutate_at(.vars = vars(value, answer_fct),
-                       .funs = ~forcats::fct_inseq(.data))
+                       .funs = ~forcats::fct_inseq())
   }
 
   # add all the optionals - relevel the fct levels
@@ -67,7 +67,7 @@ answ_freq_table <- function(data,
     base_table <-
       base_table %>%
       dplyr::mutate_at(.vars = vars(value, answer_fct),
-                       .funs = ~fct_relevel(.data, !!!relevel_by))
+                       .funs = ~fct_relevel(!!!relevel_by))
   }
 
 

@@ -3,7 +3,5 @@
 export("%>%")
 export(answ_freq_table)
 export(ggStackfreq)
-import(magrittr)
-import(stringr)
 importFrom(magrittr,"%>%")
 importFrom(rlang,.data)
