@@ -13,7 +13,7 @@ ggStackfreq(
   recode_to_french,
   recode_to_italian,
   set_colors,
-  language = "german"
+  language
 )
 }
 \arguments{

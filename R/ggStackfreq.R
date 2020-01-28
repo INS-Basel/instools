@@ -10,7 +10,6 @@
 #' @param set_colors specify coloring by (numeric) answer, arguments passed to fct_recode
 #' @param language one of c("german, "french", "italian"), default == "german", abbreviations tolerated
 #'
-#' @import stringr
 #'
 #' @return a ggplot-object
 #' @export
@@ -23,7 +22,7 @@ ggStackfreq <- function(data,
                         recode_to_french,
                         recode_to_italian,
                         set_colors,
-                        language = "german"){
+                        language){
 
 
   # create the frequency table
@@ -50,21 +49,23 @@ ggStackfreq <- function(data,
                   N = base::sum(n)) %>%
     dplyr::ungroup()
 
+  answer_labels <- base::levels(data$answer_fct)
 
   ###################### setting answer labels ######################
   # language dependent labelling
-  if (language %in% c("german", "g")) {
 
-    answer_labels <-
-      base::levels(data$answer_opt_g) } else if (language %in% c("french", "f")){
-
-        answer_labels <-
-          base::levels(data$answer_opt_f) } else if (language %in% c("italian", "i")){
-
-            answer_labels <-
-              base::levels(data$answer_opt_i)
-
-          }
+  # if(language %in% c("german", "g")) {
+  #
+  # answer_labels <-
+  #   base::levels(data$answer_opt_g) } else if (language %in% c("french", "f")){
+  #
+  #     answer_labels <-
+  #       base::levels(data$answer_opt_f) } else if (language %in% c("italian", "i")){
+  #
+  #         answer_labels <-
+  #           base::levels(data$answer_opt_i)
+  #
+  #       }
 
   ###################### setting labels for colours ######################
 
@@ -122,6 +123,8 @@ ggStackfreq <- function(data,
                                 breaks = seq(0, 1, .1),
                                 name = NULL)
 
+
+  # add customized colours
   if(!is.null(colours)){
 
     base_plot <-
@@ -130,24 +133,20 @@ ggStackfreq <- function(data,
                                  name = NULL,
                                  drop = FALSE,
                                  labels = stringr::str_wrap(answer_labels, 18),
-                                 guide = ggplot2::guide_legend(reverse = T))
+                                 guide = ggplot2::guide_legend(reverse = TRUE))
   }
 
+  # add coord_flip and theme
+  base_plot <-
+    base_plot +
+      ggplot2::coord_flip() +
+      ggplot2::theme_classic() +
+      ggplot2::theme(legend.position = "bottom",
+                     legend.direction = "horizontal",
+                     legend.key.size = ggplot2::unit(1,"line"))
 
+  # add labels
   base_plot +
-    ggplot2::coord_flip() +
-    ggplot2::theme_classic() +
-    ggplot2::theme(legend.position = "bottom",
-                   legend.direction = "horizontal",
-                   legend.key.size = unit(1,"line")) +
-    # geom_label(aes(y = 1-text_pos,
-    #                label = scales::percent(percent, .1, 100)),
-    #            nudge_y      = 0,
-    #            nudge_x      = -0.1,
-    #
-    #                                      label.size   = 0.3,
-    #                                      size         = 3.2,
-    #                                      show.legend  = FALSE)
     ggrepel::geom_label_repel(ggplot2::aes(y = 1-text_pos,
                                            label = scales::percent(percent, .1, 100)),
                               nudge_y      = 0.01,
@@ -159,5 +158,6 @@ ggStackfreq <- function(data,
                               label.size   = 0.3,
                               size         = 3.2,
                               show.legend  = FALSE)
+
 
 }
