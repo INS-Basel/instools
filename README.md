@@ -1,12 +1,14 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# 📦 hsrtools - a collection of functions for health services research
+# 📦 hsrtools - functions for health services research
 
 <!-- badges: start -->
 
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![Travis build
+status](https://travis-ci.org/INS-Basel/hsrtools.svg?branch=master)](https://travis-ci.org/INS-Basel/hsrtools)
 <!-- badges: end -->
 
 The goal of hsrtools is to combine and share functions with potential
