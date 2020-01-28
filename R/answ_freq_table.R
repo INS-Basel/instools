@@ -10,7 +10,9 @@
 #' @param recode_to_italian specify (alphanumeric) answer options, arguments passed to fct_recode
 #' @param set_colors specify coloring by (numeric) answer, arguments passed to fct_recode
 #'
-#' @import magrittr
+#' @section Helpers
+#'
+#' @importFrom magrittr %>%
 #' @importFrom rlang .data
 #'
 #' @return a dataframe
@@ -31,12 +33,12 @@ answ_freq_table <- function(data,
   # create a list to map over
   my_list <-
     data %>%
-    dplyr::select({{vars}}) %>% base::as.list()
+     dplyr::select({{vars}}) %>% base::as.list()
 
 
   # create the base table
   base_table <-
-    purrr::map_dfr(my_list, .f = {~forcats::as_factor(.x) %>% janitor::tabyl(.x,
+    purrr::map_dfr(my_list, .f = { ~forcats::as_factor(.x) %>% janitor::tabyl(.x,
                                                                               show_na = FALSE,
                                                                               show_missing_levels = TRUE)},
                    .id = "variable") %>%
@@ -47,8 +49,8 @@ answ_freq_table <- function(data,
                   answer_opt_f = NA_character_,
                   answer_opt_i = NA_character_,
                   answer_color = NA_character_) %>%
-    dplyr::mutate_at(.vars = vars(value, answer_fct),
-                     .funs = ~forcats::fct_inseq())
+    dplyr::mutate_at(.vars = dplyr::vars(value, answer_fct),
+                     .funs = ~forcats::fct_inseq(.))
 
   # add all the optionals - expand factor levels
   if(!missing(expand_to)){
@@ -58,7 +60,7 @@ answ_freq_table <- function(data,
       dplyr::mutate_at(.vars = vars(value, answer_fct),
                        .funs = ~forcats::fct_expand(expand_to)) %>%
       dplyr::mutate_at(.vars = vars(value, answer_fct),
-                       .funs = ~forcats::fct_inseq())
+                       .funs = ~forcats::fct_inseq(.))
   }
 
   # add all the optionals - relevel the fct levels
@@ -107,7 +109,11 @@ answ_freq_table <- function(data,
 
   }
 
+  base_table <- tibble::as_tibble(base_table)
+
   #specify the output
   return(base_table)
+
+  # return(base_table)
 
 }
