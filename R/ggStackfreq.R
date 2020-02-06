@@ -72,40 +72,6 @@ ggStackfreq <- function(data,
   # check hex color codes by
   # scales::show_col("#fef0d9")
 
-  # colors4 <- c("4" = "#fef0d9",
-  #              "3" = "#fdcc8a",
-  #              "2" = "#fc8d59",
-  #              "1" = "#d7301f")
-  #
-  # colors4plus10 <- c("10" = "#bdc9e1", #neutral blue
-  #                    "4"  = "#fef0d9",
-  #                    "3"  = "#fdcc8a",
-  #                    "2"  = "#fc8d59",
-  #                    "1"  = "#d7301f")
-  #
-  # colors5 <- c("5"  = "#fef0d9",
-  #              "4"  = "#fdcc8a",
-  #              "3"  = "#fc8d59",
-  #              "2"  = "#e34a33",
-  #              "1"  = "#b30000")
-  #
-  #
-  # colors5plus10 <- c("10" = "#bdc9e1", #neutral blue
-  #                    "5"  = "#fef0d9",
-  #                    "4"  = "#fdcc8a",
-  #                    "3"  = "#fc8d59",
-  #                    "2"  = "#e34a33",
-  #                    "1"  = "#b30000")
-  #
-  # colors5plus66 <- c("66" = "#bdc9e1", #neutral blue
-  #                    "77"  = "#fef0d9",
-  #                    "0"  = "#fdcc8a",
-  #                    "1"  = "#fc8d59",
-  #                    "2"  = "#e34a33",
-  #                    "3"  = "#b30000")
-
-
-  #7fcdbb #türkis
 
   ############### for now - take the colouring from the ground table ############
   colours <- base::levels(data$answer_color)

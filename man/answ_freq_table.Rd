@@ -39,7 +39,3 @@ a dataframe
 \description{
 Create a frequency table of answers options
 }
-\section{Helpers}{
-NA
-}
-

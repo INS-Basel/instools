@@ -10,8 +10,7 @@
 #' @param recode_to_italian specify (alphanumeric) answer options, arguments passed to fct_recode
 #' @param set_colors specify coloring by (numeric) answer, arguments passed to fct_recode
 #'
-#' @section Helpers
-#'
+#
 #' @importFrom magrittr %>%
 #' @importFrom rlang .data
 #'
@@ -33,7 +32,7 @@ answ_freq_table <- function(data,
   # create a list to map over
   my_list <-
     data %>%
-     dplyr::select({{vars}}) %>% base::as.list()
+     dplyr::select(tidyselect::all_of({{vars}})) %>% base::as.list()
 
 
   # create the base table
@@ -57,9 +56,9 @@ answ_freq_table <- function(data,
 
     base_table <-
       base_table %>%
-      dplyr::mutate_at(.vars = vars(value, answer_fct),
+      dplyr::mutate_at(.vars = dplyr::vars(value, answer_fct),
                        .funs = ~forcats::fct_expand(expand_to)) %>%
-      dplyr::mutate_at(.vars = vars(value, answer_fct),
+      dplyr::mutate_at(.vars = dplyr::vars(value, answer_fct),
                        .funs = ~forcats::fct_inseq(.))
   }
 
@@ -68,7 +67,7 @@ answ_freq_table <- function(data,
 
     base_table <-
       base_table %>%
-      dplyr::mutate_at(.vars = vars(value, answer_fct),
+      dplyr::mutate_at(.vars = dplyr::vars(value, answer_fct),
                        .funs = ~fct_relevel(!!!relevel_by))
   }
 
