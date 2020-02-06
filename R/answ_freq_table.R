@@ -68,7 +68,7 @@ answ_freq_table <- function(data,
     base_table <-
       base_table %>%
       dplyr::mutate_at(.vars = dplyr::vars(value, answer_fct),
-                       .funs = ~fct_relevel(!!!relevel_by))
+                       .funs = ~forcats::fct_relevel(!!!relevel_by))
   }
 
 
