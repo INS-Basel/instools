@@ -1,7 +1,9 @@
 #' Create a frequency table of answers options
 #'
-#' @param data a dataframe
-#' @param vars a vector passing a selection of variables
+#' @param data a tidy dataframe
+#' @param vars variable of interest, single or vector. If you pass a selection of variables in a
+#' vector, put tidyselect::all_of(my_vector) to refer to the individual items. see:
+#' https://tidyselect.r-lib.org/reference/faq-external-vector.html
 #' @param expand_to specify all factor levels (numeric), arguments are passed to fct_expand
 #' @param relevel_by specify order of factor levels, arguments passed to fct_relevel
 #' @param recode_to_german specify (alphanumeric) answer options, arguments passed to fct_recode,
@@ -16,6 +18,7 @@
 #'
 #' @return a dataframe
 #' @export
+#'
 #'
 answ_freq_table <- function(data,
                             vars,
@@ -32,7 +35,7 @@ answ_freq_table <- function(data,
   # create a list to map over
   my_list <-
     data %>%
-     dplyr::select(tidyselect::all_of({{vars}})) %>% base::as.list()
+     dplyr::select({{vars}}) %>% base::as.list()
 
 
   # create the base table
