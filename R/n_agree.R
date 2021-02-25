@@ -23,6 +23,6 @@ n_agree <- function(x, cutoff = 1){
   # check input
   assertthat::assert_that(base::is.numeric(x))
 
-  sum(x %in% cutoff, na.rm = T)
+  as.integer(sum(x %in% cutoff, na.rm = T))
 
 }
