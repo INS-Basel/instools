@@ -12,7 +12,6 @@
 #'
 #'
 #' @return a ggplot-object
-#' @export
 #'
 ggStackfreq <- function(data,
                         vars,

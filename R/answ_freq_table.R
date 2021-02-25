@@ -17,7 +17,6 @@
 #' @importFrom rlang .data
 #'
 #' @return a dataframe
-#' @export
 #'
 #'
 answ_freq_table <- function(data,
