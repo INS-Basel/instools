@@ -16,9 +16,11 @@ answ_freq_table(
 )
 }
 \arguments{
-\item{data}{a dataframe}
+\item{data}{a tidy dataframe}
 
-\item{vars}{a vector passing a selection of variables}
+\item{vars}{variable of interest, single or vector. If you pass a selection of variables in a
+vector, put tidyselect::all_of(my_vector) to refer to the individual items. see:
+https://tidyselect.r-lib.org/reference/faq-external-vector.html}
 
 \item{expand_to}{specify all factor levels (numeric), arguments are passed to fct_expand}
 
