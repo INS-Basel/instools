@@ -10,6 +10,9 @@
 #' @export
 #'
 #' @examples
+#' # binary vector
+#' vec <- c(0, 1, 1, 0, 0, 1, NA_real_, 1)
+#' prop_agree(x = vec, cutoff = 1)
 prop_agree <- function(x, cutoff = 1, restrict_level = NULL){
 
   # asserthat assumption
