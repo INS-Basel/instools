@@ -2,11 +2,14 @@
 #'
 #' @param x a vector
 #'
-#' @return \code{n.valid()} returns the number of fields not being NA in a vector
+#' @return an integer value
 #' @export
 #'
 #' @examples
 n_valid <- function(x){
+
+  # check inputs
+  assertthat::assert_that(base::is.vector(x))
 
   sum(!is.na(x))
 

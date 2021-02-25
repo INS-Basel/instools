@@ -2,11 +2,13 @@
 #'
 #' @param x a vector
 #'
-#' @return
+#' @return a numeric vector
 #' @export
 #'
 #' @examples
 n_missing <- function(x){
+
+  assertthat::assert_that(base::is.vector(x))
 
   sum(is.na(x))
 

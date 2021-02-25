@@ -2,5 +2,9 @@
 
 export(answ_freq_table)
 export(ggStackfreq)
+export(n_agree)
+export(n_missing)
+export(n_valid)
+export(prop_agree)
 importFrom(magrittr,"%>%")
 importFrom(rlang,.data)
