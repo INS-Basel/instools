@@ -1,0 +1,14 @@
+reference:
+- title: "Reporting functions"
+  desc: >
+    Functions for use in parametrized reports
+- contents:
+  - n_valid
+  - n_agree
+  - n_missing
+  - prop_agree
+- title: "Data visualization"
+  desc: >
+    Functions for accelerating graphics
+- contents:
+  - unibas_color_palette_overview
