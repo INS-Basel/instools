@@ -1,7 +1,7 @@
 Package: hsrtools
 Type: Package
-Title: A Collection of Functions for Health Services research
-Version: 0.0.1.9001
+Title: A Collection of Functions for Health Services Research at INS
+Version: 0.0.1.9002
 Authors@R: c(
     person("Catherine", "Blatter", email = "catherine.blatter@unibas.ch", role = c("aut", "cre")))
 Description: hsrtools is a collection of functions written for questionnaire-studies in health services research.
