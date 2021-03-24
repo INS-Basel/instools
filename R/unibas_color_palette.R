@@ -1,6 +1,8 @@
-#' Color palette proposed by Unibas CI
+#' Overview of color palette proposed by unibas corporate design
 #'
-#' Overview all colors from Nursing CI info sheet (found on ADAM)
+#' A table giving an overview all colors (taken from the CI info sheet on ADAM)
+#' with both RGB and Hex values
+#'
 #' @export
 #'
 #' @examples
@@ -23,3 +25,9 @@ unibas_color_palette_overview <-
   ) %>%
   dplyr::mutate(hex_value = purrr::map_chr(rgb_value,
                                            ~grDevices::rgb(.x[1], .x[2], .x[3], maxColorValue = 255)))
+
+
+#' Colour palette to use in figures
+#'
+#' A vector holding the information from \code{unibas_color_palette_overview$hex_value}
+unibas_palette <- unibas_color_palette_overview$hex_value
