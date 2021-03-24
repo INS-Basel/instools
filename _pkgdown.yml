@@ -9,6 +9,7 @@ reference:
   - prop_agree
 - title: "Data visualization"
   desc: >
-    Functions for accelerating graphics
+    Functions for taking your figures to a higher level
 - contents:
   - unibas_color_palette_overview
+  - unibas_palette
