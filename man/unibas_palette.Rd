@@ -13,4 +13,14 @@ unibas_palette
 \description{
 A vector holding the information from \code{unibas_color_palette_overview$hex_value}
 }
+\examples{
+library(ggplot2)
+ggplot(diamonds, aes(x = cut, y = carat)) +
+geom_col(aes(fill = cut)) +
+scale_fill_manual(values = unibas_palette) +
+ labs(x = "",
+  title = "Diamonds: Carat by Cut",
+  subtitle = "in the Unibas color-palette") +
+  theme_minimal()
+}
 \keyword{datasets}
