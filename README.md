@@ -1,21 +1,24 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# 📦 hsrtools - functions for health services research
+# 📦 hsrtools - a handy collection of functions for health services research
 
 <!-- badges: start -->
 
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![R-CMD-check](https://github.com/INS-Basel/hsrtools/workflows/R-CMD-check/badge.svg)](https://github.com/INS-Basel/hsrtools/actions)
 <!-- badges: end -->
 
-The goal of hsrtools is to combine and share functions with potential
-further use in one of the health services research projects at the
-Institute of Nursing Science at the University of Basel.
+The goal of {hsrtools} is to combine and share functions with potential
+further use in one of the research projects at the Institute of Nursing
+Science at the University of Basel.
+
+Please report any bugs/issues, thanks!
 
 ## Installation
 
-You can install the package from [GitHub](https://github.com/) with:
+You can install the package from [GitHub](https://github.com/) by:
 
 ``` r
 # install.packages("remotes")
@@ -24,4 +27,14 @@ remotes::install_github("INS-Basel/hsrtools")
 
 ## Types of functions
 
-*(to be added)*
+The package is mostly a collection of self-written utilities. At the
+moment the  
+following groups are included:
+
+-   Functions for reporting:
+    -   Contains ‘handy helpers’ deemed useful for in parametrized
+        reports (automated reports to generate for e.g. participating
+        organizations)
+-   Data visualization:
+    -   standard color scheme of unibas defined by CI to be accessed as
+        scales for plotting
