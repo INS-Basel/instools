@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# 📦 hsrtools - a handy collection of functions for health services research
+# 📦 hsrtools - a collection of functions for health services research
 
 <!-- badges: start -->
 
@@ -18,7 +18,7 @@ Please report any bugs/issues, thanks!
 
 ## Installation
 
-You can install the package from [GitHub](https://github.com/) by:
+You can install the package from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("remotes")
@@ -38,3 +38,6 @@ following groups are included:
 -   Data visualization:
     -   standard color scheme of unibas defined by CI to be accessed as
         scales for plotting
+-   Handy helpers:
+    -   adding date-column to any dataframe before saving/writing the
+        file
