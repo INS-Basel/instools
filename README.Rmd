@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# `r emo::ji("package")` hsrtools -  a handy collection of functions for health services research
+# `r emo::ji("package")` hsrtools -  a collection of functions for health services research
 
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
@@ -28,7 +28,7 @@ Please report any bugs/issues, thanks!
 
 ## Installation
 
-You can install the package from [GitHub](https://github.com/) by:
+You can install the package from [GitHub](https://github.com/) with:
 
 ```{r, eval = F}
 # install.packages("remotes")
@@ -47,6 +47,9 @@ following groups are included:
   
 - Data visualization: 
   - standard color scheme of unibas defined by CI to be accessed as scales for plotting  
+  
+- Handy helpers: 
+  - adding date-column to any dataframe before saving/writing the file  
 
   
   

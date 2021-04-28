@@ -1,11 +1,11 @@
 Package: hsrtools
 Type: Package
 Title: A Collection of Functions for Health Services Research at INS
-Version: 0.0.1.9002
+Version: 0.0.1.9003
 Authors@R: c(
     person("Catherine", "Blatter", email = "catherine.blatter@unibas.ch", role = c("aut", "cre")))
-Description: hsrtools is a collection of functions written for questionnaire-studies in health services research.
-    They cover elements for creating easily-usable graphs for sharing with the survey-participants. 
+Description: hsrtools is a collection of functions written for and used in health services 
+    research-studies at INS.
 URL: https://github.com/INS-Basel/hsrtools/
 BugReports: https://github.com/INS-Basel/hsrtools/issues
 License: MIT + file LICENSE
@@ -23,7 +23,8 @@ Imports:
     tibble,
     tidyselect, 
     assertthat,
-    testthat
+    testthat,
+    lubridate
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.1
