@@ -10,6 +10,16 @@
 unibas_color_palette_overview <-
   tibble::tibble(
         col_num = seq_len(10),
+        name = c("mint",
+                 "mintdark",
+                 "greydark",
+                 "grey",
+                 "reddark",
+                 "redlight",
+                 "greylight",
+                 "tuerkis",
+                 "black",
+                 "white"),
         rgb_value = list(
           list(165, 215, 210),
           list(30, 165, 165),
@@ -25,7 +35,6 @@ unibas_color_palette_overview <-
   ) %>%
   dplyr::mutate(hex_value = purrr::map_chr(rgb_value,
                                            ~grDevices::rgb(.x[1], .x[2], .x[3], maxColorValue = 255)))
-
 
 #' Colour palette to use in figures
 #'
