@@ -3,7 +3,9 @@ Type: Package
 Title: A Collection of Functions for Health Services Research at INS
 Version: 0.0.1.9003
 Authors@R: c(
-    person("Catherine", "Blatter", email = "catherine.blatter@unibas.ch", role = c("aut", "cre")))
+    person("Catherine", "Blatter", email = "catherine.blatter@unibas.ch", 
+    role = c("aut", "cre"),
+    comment = c(ORCID = "0000-0002-4069-7178")))
 Description: hsrtools is a collection of functions written for and used in health services 
     research-studies at INS.
 URL: https://github.com/INS-Basel/hsrtools/
