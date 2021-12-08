@@ -3,12 +3,27 @@
 \docType{data}
 \name{unibas_palette}
 \alias{unibas_palette}
-\title{Colour palette to use in figures}
+\alias{unibas_pal_op}
+\alias{unibas_pal_cont}
+\alias{unibas_pal_div}
+\title{Unibas colour palette to use in figures}
 \format{
 An object of class \code{character} of length 10.
+
+An object of class \code{character} of length 3.
+
+An object of class \code{character} of length 2.
+
+An object of class \code{character} of length 3.
 }
 \usage{
 unibas_palette
+
+unibas_pal_op
+
+unibas_pal_cont
+
+unibas_pal_div
 }
 \description{
 A vector holding the information from \code{unibas_color_palette_overview$hex_value}
