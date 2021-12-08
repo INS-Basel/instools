@@ -36,10 +36,11 @@ unibas_color_palette_overview <-
   dplyr::mutate(hex_value = purrr::map_chr(rgb_value,
                                            ~grDevices::rgb(.x[1], .x[2], .x[3], maxColorValue = 255)))
 
-#' Colour palette to use in figures
+#' Unibas colour palette to use in figures
 #'
 #' A vector holding the information from \code{unibas_color_palette_overview$hex_value}
 #'
+#' @name unibas_palette
 #' @export
 #'
 #' @examples
@@ -52,3 +53,20 @@ unibas_color_palette_overview <-
 #'   subtitle = "in the Unibas color-palette") +
 #'   theme_minimal()
 unibas_palette <- unibas_color_palette_overview$hex_value
+
+
+#' @name unibas_palette
+#' @export
+# Define opinionated discrete palette (good, neutral, bad)
+unibas_pal_op <- c(unibas_palette[1], unibas_palette[7], unibas_palette[6])
+
+#' @name unibas_palette
+#' @export
+# Define two colors for endpoints of continuous palette
+unibas_pal_cont <- c(unibas_palette[1], unibas_palette[2])
+
+#' @name unibas_palette
+#' @export
+# Define three colors for endpoints of diverging continuous palette (high, middle, low)
+unibas_pal_div  <- c(unibas_palette[1], unibas_palette[2], unibas_palette[4])
+

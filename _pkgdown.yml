@@ -1,19 +1,21 @@
+url: https://ins-basel.github.io/hsrtools
+
 reference:
-- title: "Reporting functions"
-  desc: >
+- title: Reporting functions
+  desc: |
     Functions for use in parametrized reports
 - contents:
   - n_valid
   - n_agree
   - n_missing
   - prop_agree
-- title: "Data visualization"
-  desc: >
+- title: Data visualization
+  desc: |
     Functions for taking your figures to a higher level
 - contents:
   - unibas_color_palette_overview
   - unibas_palette
-- title: "Handy helpers"
-  desc: >
-- contents:
-  - file_created_on
+- title: Handy helpers
+  desc: ~
+- contents: file_created_on
+
