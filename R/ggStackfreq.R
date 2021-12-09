@@ -10,6 +10,7 @@
 #' @param set_colors specify coloring by (numeric) answer, arguments passed to fct_recode
 #' @param language one of c("german, "french", "italian"), default == "german", abbreviations tolerated
 #'
+#' @keywords internal
 #'
 #' @return a ggplot-object
 #'

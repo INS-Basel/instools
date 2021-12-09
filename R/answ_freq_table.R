@@ -16,8 +16,9 @@
 #' @importFrom magrittr %>%
 #' @importFrom rlang .data
 #'
-#' @return a dataframe
+#' @keywords internal
 #'
+#' @return a dataframe
 #'
 answ_freq_table <- function(data,
                             vars,
