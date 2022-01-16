@@ -1,8 +1,8 @@
 pandoc: 2.7.3
-pkgdown: 2.0.1
+pkgdown: 2.0.2
 pkgdown_sha: ~
 articles: {}
-last_built: 2021-12-09T08:20Z
+last_built: 2022-01-16T09:24Z
 urls:
   reference: https://ins-basel.github.io/hsrtools/reference
   article: https://ins-basel.github.io/hsrtools/articles
