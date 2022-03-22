@@ -17,5 +17,9 @@ reference:
   - unibas_palette
 - title: Handy helpers
   desc: ~
-- contents: file_created_on
+- contents:
+  - file_created_on
+  - get_model_table
+  - get_model_dotplot
+  - ggCaterpillar
 
