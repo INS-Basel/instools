@@ -1,6 +1,6 @@
 # hsrtools 0.0.3
 
-* added unibas color scale & theme [#ec05a04855406c258dcc4e2168028aad26b9dfd8]
+* added unibas color scale & theme [#ec05a04]
 * Housekeeping: removed stale internal functions (no user visible changes)
 * update gh-action worklfow to v2
 
