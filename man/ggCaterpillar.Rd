@@ -18,9 +18,6 @@ ggCaterpillar(model, condVar = TRUE, QQ = FALSE, likeDotplot = TRUE)
 
 \item{likeDotplot}{TRUE/FALSE, default = FALSE}
 }
-\value{
-
-}
 \description{
 ggCaterpillar plot from random effects model
 }

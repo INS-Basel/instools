@@ -24,7 +24,6 @@ get_model_dotplot <- function(model){
 #'
 #' @importFrom rlang .data
 #'
-#' @return
 #' @export
 #'
 ggCaterpillar <- function(model, condVar = TRUE, QQ = FALSE, likeDotplot = TRUE) {

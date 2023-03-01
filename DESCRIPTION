@@ -1,12 +1,12 @@
 Package: hsrtools
 Type: Package
-Title: A Collection of Functions for Health Services Research at INS
-Version: 0.0.2.9000
+Title: A Collection of Tools for Health Services Research at INS
+Version: 0.0.3
 Authors@R: c(
     person("Catherine", "Blatter", email = "catherine.blatter@unibas.ch", 
     role = c("aut", "cre"),
     comment = c(ORCID = "0000-0002-4069-7178")))
-Description: hsrtools is a collection of functions written for and used in health services 
+Description: hsrtools is a collection of code tools written for and used in health services 
     research-studies at INS.
 URL: https://github.com/INS-Basel/hsrtools/,
     https://ins-basel.github.io/hsrtools
@@ -15,22 +15,20 @@ License: MIT + file LICENSE
 Imports: 
     dplyr,
     forcats,
-    janitor,
-    purrr,
     magrittr,
     rlang,
-    ggrepel,
-    scales, 
-    stringr,
     ggplot2,
     tibble,
-    tidyselect, 
     assertthat,
-    testthat,
     lubridate,
     lattice,
-    lme4, 
-    arm
+    lme4,
+    arm,
+    methods
+Suggests:
+    testthat
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.1
+Depends: 
+    R (>= 2.10)
