@@ -16,9 +16,6 @@
     <loc>https://ins-basel.github.io/hsrtools/news/index.html</loc>
   </url>
   <url>
-    <loc>https://ins-basel.github.io/hsrtools/reference/answ_freq_table.html</loc>
-  </url>
-  <url>
     <loc>https://ins-basel.github.io/hsrtools/reference/file_created_on.html</loc>
   </url>
   <url>
@@ -28,13 +25,16 @@
     <loc>https://ins-basel.github.io/hsrtools/reference/get_model_table.html</loc>
   </url>
   <url>
+    <loc>https://ins-basel.github.io/hsrtools/reference/get_unibas_palettes.html</loc>
+  </url>
+  <url>
     <loc>https://ins-basel.github.io/hsrtools/reference/ggCaterpillar.html</loc>
   </url>
   <url>
-    <loc>https://ins-basel.github.io/hsrtools/reference/ggStackfreq.html</loc>
+    <loc>https://ins-basel.github.io/hsrtools/reference/index.html</loc>
   </url>
   <url>
-    <loc>https://ins-basel.github.io/hsrtools/reference/index.html</loc>
+    <loc>https://ins-basel.github.io/hsrtools/reference/journal_format.html</loc>
   </url>
   <url>
     <loc>https://ins-basel.github.io/hsrtools/reference/n_agree.html</loc>
@@ -49,9 +49,15 @@
     <loc>https://ins-basel.github.io/hsrtools/reference/prop_agree.html</loc>
   </url>
   <url>
+    <loc>https://ins-basel.github.io/hsrtools/reference/scale_custom.html</loc>
+  </url>
+  <url>
+    <loc>https://ins-basel.github.io/hsrtools/reference/theme_unibas.html</loc>
+  </url>
+  <url>
     <loc>https://ins-basel.github.io/hsrtools/reference/unibas_color_palette_overview.html</loc>
   </url>
   <url>
-    <loc>https://ins-basel.github.io/hsrtools/reference/unibas_palette.html</loc>
+    <loc>https://ins-basel.github.io/hsrtools/reference/unibas_pal.html</loc>
   </url>
 </urlset>
