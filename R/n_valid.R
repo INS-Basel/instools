@@ -5,7 +5,6 @@
 #' @return an integer value
 #' @export
 #'
-#' @examples
 n_valid <- function(x){
 
   # check inputs

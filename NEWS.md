@@ -1,3 +1,9 @@
+# hsrtools 0.0.3
+
+* housekeeping: removed stale internal functions
+* Added unibas color scale & theme
+
+
 # hsrtools 0.0.2.9000
 
 * Added a `NEWS.md` file to track changes to the package.
