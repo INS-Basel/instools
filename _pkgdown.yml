@@ -1,28 +1,4 @@
-url: https://ins-basel.github.io/hsrtools
-
-reference:
-- title: Reporting functions
-  desc: |
-    Functions for use in parametrized reports
-- contents:
-  - n_valid
-  - n_agree
-  - n_missing
-  - prop_agree
-- title: Data visualization
-  desc: |
-    Functions for taking your figures to a higher level
-- contents:
-  - unibas_pal
-  - get_unibas_palettes
-  - scale_custom
-  - theme_unibas
-  - unibas_color_palette_overview
-- title: Handy helpers
-  desc: ~
-- contents:
-  - file_created_on
-  - get_model_table
-  - get_model_dotplot
-  - ggCaterpillar
+url: https://ins-basel.github.io/hsrtools/
+template:
+  bootstrap: 5
 

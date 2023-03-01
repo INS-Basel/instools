@@ -9,7 +9,8 @@ Authors@R: c(
 Description: hsrtools is a collection of code tools written for and used in health services 
     research-studies at INS.
 URL: https://github.com/INS-Basel/hsrtools/,
-    https://ins-basel.github.io/hsrtools
+    https://ins-basel.github.io/hsrtools,
+    https://ins-basel.github.io/hsrtools/
 BugReports: https://github.com/INS-Basel/hsrtools/issues
 License: MIT + file LICENSE
 Imports: 
