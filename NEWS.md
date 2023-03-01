@@ -1,8 +1,7 @@
 # hsrtools 0.0.3
 
-* housekeeping: removed stale internal functions
-* Added unibas color scale & theme
-
+* added unibas color scale & theme 
+* Housekeeping: removed stale internal functions (no user visible changes)
 
 # hsrtools 0.0.2.9000
 
