@@ -4,14 +4,16 @@
 \alias{journal_format}
 \title{Format numbers according to journal requirements}
 \usage{
-journal_format(x, n_break = 4, ...)
+journal_format(x, n_break = 4, big.mark = ",", ...)
 }
 \arguments{
 \item{x}{an integer}
 
 \item{n_break}{fix number where the formatting sets the break}
 
-\item{...}{additional arguments passed to base::format()}
+\item{big.mark}{defaults to ",", passed to \code{base::format(big.mark)}}
+
+\item{...}{additional arguments passed to \code{base::format()}}
 }
 \value{
 an formatted character string
@@ -19,4 +21,11 @@ an formatted character string
 \description{
 Format numbers according to journal requirements
 }
-\keyword{internal}
+\details{
+some journal require to format big numbers only from the
+fifth digit (instead of the fourth) - this functions fixes this
+}
+\examples{
+vec <- c(1L, 20L, 300L, 4000L, 50000L)
+journal_format(vec, big.mark = ",")
+}
