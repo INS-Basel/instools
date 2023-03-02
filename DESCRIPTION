@@ -1,7 +1,7 @@
 Package: hsrtools
 Type: Package
 Title: A Collection of Tools for Health Services Research at INS
-Version: 0.0.3
+Version: 0.0.3.9000
 Authors@R: c(
     person("Catherine", "Blatter", email = "catherine.blatter@unibas.ch", 
     role = c("aut", "cre"),
