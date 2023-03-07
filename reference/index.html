@@ -44,7 +44,70 @@
     </div>
 
     <div class="section level2">
-      <h2 id="all-functions">All functions<a class="anchor" aria-label="anchor" href="#all-functions"></a></h2>
+      <h2 id="reporting-functions">Reporting functions<a class="anchor" aria-label="anchor" href="#reporting-functions"></a></h2>
+      
+      <p class="section-desc"></p><p>Functions for use in parametrized reports</p>
+
+      
+    </div><div id="" class="section level2">
+      
+      
+      
+
+      <dl><dt>
+          
+          <code><a href="n_valid.html">n_valid()</a></code> 
+        </dt>
+        <dd>get sum of valid (not NAs) of a vector</dd>
+      </dl><dl><dt>
+          
+          <code><a href="n_agree.html">n_agree()</a></code> 
+        </dt>
+        <dd>get number of agreement answers (defined by a cutoff) in a vector</dd>
+      </dl><dl><dt>
+          
+          <code><a href="n_missing.html">n_missing()</a></code> 
+        </dt>
+        <dd>get number of NAs in a vector (complement to n_valid())</dd>
+      </dl><dl><dt>
+          
+          <code><a href="prop_agree.html">prop_agree()</a></code> 
+        </dt>
+        <dd>get (proportion) percentage agreement of answers in a vector - 'agreement' to be defined
+by cutoff</dd>
+      </dl></div><div class="section level2">
+      <h2 id="data-visualization">Data visualization<a class="anchor" aria-label="anchor" href="#data-visualization"></a></h2>
+      
+      <p class="section-desc"></p><p>Functions for taking your figures to a higher level</p>
+
+      
+    </div><div id="" class="section level2">
+      
+      
+      
+
+      <dl><dt>
+          
+          <code><a href="unibas_pal.html">unibas_pal</a></code> <code><a href="unibas_pal.html">unibas_pal_op</a></code> <code><a href="unibas_pal.html">unibas_pal_cont</a></code> <code><a href="unibas_pal.html">unibas_pal_div</a></code> 
+        </dt>
+        <dd>Unibas colour palette to use in figures</dd>
+      </dl><dl><dt>
+          
+          <code><a href="scale_custom.html">scale_color_unibas_d()</a></code> <code><a href="scale_custom.html">scale_colour_unibas_d()</a></code> <code><a href="scale_custom.html">scale_fill_unibas_d()</a></code> <code><a href="scale_custom.html">scale_color_unibas_op()</a></code> <code><a href="scale_custom.html">scale_colour_unibas_op()</a></code> <code><a href="scale_custom.html">scale_fill_unibas_op()</a></code> <code><a href="scale_custom.html">scale_color_unibas_div()</a></code> <code><a href="scale_custom.html">scale_colour_unibas_div()</a></code> <code><a href="scale_custom.html">scale_fill_unibas_div()</a></code> <code><a href="scale_custom.html">scale_color_unibas_c()</a></code> <code><a href="scale_custom.html">scale_colour_unibas_c()</a></code> <code><a href="scale_custom.html">scale_fill_unibas_c()</a></code> 
+        </dt>
+        <dd>Custom color and fill scales</dd>
+      </dl><dl><dt>
+          
+          <code><a href="theme_unibas.html">theme_unibas()</a></code> 
+        </dt>
+        <dd>unibas ggplot theme</dd>
+      </dl><dl><dt>
+          
+          <code><a href="unibas_color_palette_overview.html">unibas_color_palette_overview</a></code> 
+        </dt>
+        <dd>unibas_color_palette_overview</dd>
+      </dl></div><div class="section level2">
+      <h2 id="handy-helpers">Handy helpers<a class="anchor" aria-label="anchor" href="#handy-helpers"></a></h2>
       
       
 
@@ -61,19 +124,14 @@
         <dd>Adds 'file_created_on'-variable to a tidy dataframe</dd>
       </dl><dl><dt>
           
-          <code><a href="get_model_dotplot.html">get_model_dotplot()</a></code> 
-        </dt>
-        <dd>Create ranef-dotplot from model</dd>
-      </dl><dl><dt>
-          
           <code><a href="get_model_table.html">get_model_table()</a></code> 
         </dt>
         <dd>create a tidy table out of the glmer-object to plot</dd>
       </dl><dl><dt>
           
-          <code><a href="get_unibas_palettes.html">get_unibas_palettes()</a></code> 
+          <code><a href="get_model_dotplot.html">get_model_dotplot()</a></code> 
         </dt>
-        <dd>Get names of all unique palettes provided in unibas</dd>
+        <dd>Create ranef-dotplot from model</dd>
       </dl><dl><dt>
           
           <code><a href="ggCaterpillar.html">ggCaterpillar()</a></code> 
@@ -84,49 +142,9 @@
           <code><a href="journal_format.html">journal_format()</a></code> 
         </dt>
         <dd>Format numbers according to journal requirements</dd>
-      </dl><dl><dt>
-          
-          <code><a href="n_agree.html">n_agree()</a></code> 
-        </dt>
-        <dd>get number of agreement answers (defined by a cutoff) in a vector</dd>
-      </dl><dl><dt>
-          
-          <code><a href="n_missing.html">n_missing()</a></code> 
-        </dt>
-        <dd>get number of NAs in a vector (complement to n_valid())</dd>
-      </dl><dl><dt>
-          
-          <code><a href="n_valid.html">n_valid()</a></code> 
-        </dt>
-        <dd>get sum of valid (not NAs) of a vector</dd>
-      </dl><dl><dt>
-          
-          <code><a href="prop_agree.html">prop_agree()</a></code> 
-        </dt>
-        <dd>get (proportion) percentage agreement of answers in a vector - 'agreement' to be defined
-by cutoff</dd>
-      </dl><dl><dt>
-          
-          <code><a href="scale_custom.html">scale_color_unibas_d()</a></code> <code><a href="scale_custom.html">scale_colour_unibas_d()</a></code> <code><a href="scale_custom.html">scale_fill_unibas_d()</a></code> <code><a href="scale_custom.html">scale_color_unibas_op()</a></code> <code><a href="scale_custom.html">scale_colour_unibas_op()</a></code> <code><a href="scale_custom.html">scale_fill_unibas_op()</a></code> <code><a href="scale_custom.html">scale_color_unibas_div()</a></code> <code><a href="scale_custom.html">scale_colour_unibas_div()</a></code> <code><a href="scale_custom.html">scale_fill_unibas_div()</a></code> <code><a href="scale_custom.html">scale_color_unibas_c()</a></code> <code><a href="scale_custom.html">scale_colour_unibas_c()</a></code> <code><a href="scale_custom.html">scale_fill_unibas_c()</a></code> 
-        </dt>
-        <dd>Custom color and fill scales</dd>
-      </dl><dl><dt>
-          
-          <code><a href="theme_unibas.html">theme_unibas()</a></code> 
-        </dt>
-        <dd>unibas ggplot theme</dd>
-      </dl><dl><dt>
-          
-          <code><a href="unibas_color_palette_overview.html">unibas_color_palette_overview</a></code> 
-        </dt>
-        <dd>unibas_color_palette_overview</dd>
-      </dl><dl><dt>
-          
-          <code><a href="unibas_pal.html">unibas_pal</a></code> <code><a href="unibas_pal.html">unibas_pal_op</a></code> <code><a href="unibas_pal.html">unibas_pal_cont</a></code> <code><a href="unibas_pal.html">unibas_pal_div</a></code> 
-        </dt>
-        <dd>Unibas colour palette to use in figures</dd>
       </dl></div>
-  </main></div>
+  </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
+    </nav></aside></div>
 
 
     <footer><div class="pkgdown-footer-left">
