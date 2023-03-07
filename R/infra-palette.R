@@ -152,9 +152,8 @@ scale_fill_unibas_c <- function(palette = "unibas", ...) {
 #'
 #' @param full Whether to include full palette names (with suffixes, e.g. \code{_cont}) or just stubs
 #' @return Vector of palette name stubs or full names
-#' @export
+#' @keywords internal
 #'
-#' @examples get_unibas_palettes()
 
 get_unibas_palettes <- function(full = FALSE){
 

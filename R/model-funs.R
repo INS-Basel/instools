@@ -20,7 +20,7 @@ get_model_dotplot <- function(model){
 #' @param QQ TRUE/FALSE, default = FALSE
 #' @param likeDotplot TRUE/FALSE, default = FALSE
 #'
-#' @source rom here: https://stackoverflow.com/questions/13847936/plot-random-effects-from-lmer-lme4-package-using-qqmath-or-dotplot-how-to-mak
+#' @source from [https://stackoverflow.com/questions/13847936/plot-random-effects-from-lmer-lme4-package-using-qqmath-or-dotplot-how-to-mak](https://stackoverflow.com/questions/13847936/plot-random-effects-from-lmer-lme4-package-using-qqmath-or-dotplot-how-to-mak)
 #'
 #' @importFrom rlang .data
 #'

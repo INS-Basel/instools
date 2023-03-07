@@ -6,7 +6,7 @@
 #' @param base_size Base font size, defaults to 12, passed to theme
 #' @param ... Further arguments passed to \code{ggplot2::theme()}
 #'
-#' @seealso [\code{ggplot2::theme}]
+#' @seealso [\code{ggplot2::theme()}](https://ggplot2.tidyverse.org/reference/theme.html)
 #'
 #' @examples
 #' library(ggplot2)

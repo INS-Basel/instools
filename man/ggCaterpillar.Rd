@@ -4,7 +4,7 @@
 \alias{ggCaterpillar}
 \title{ggCaterpillar plot from random effects model}
 \source{
-rom here: https://stackoverflow.com/questions/13847936/plot-random-effects-from-lmer-lme4-package-using-qqmath-or-dotplot-how-to-mak
+from \url{https://stackoverflow.com/questions/13847936/plot-random-effects-from-lmer-lme4-package-using-qqmath-or-dotplot-how-to-mak}
 }
 \usage{
 ggCaterpillar(model, condVar = TRUE, QQ = FALSE, likeDotplot = TRUE)

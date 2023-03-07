@@ -1,6 +1,5 @@
 #' Unibas colour palette to use in figures
 #'
-#'
 #' @name unibas_pal
 #' @export
 unibas_pal<- c(

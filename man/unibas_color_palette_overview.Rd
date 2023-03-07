@@ -5,8 +5,10 @@
 \alias{unibas_color_palette_overview}
 \title{unibas_color_palette_overview}
 \format{
-## `unibas_color_palette_overview`
+\subsection{\code{unibas_color_palette_overview}}{
+
 A data frame with 10 colors, in name, rgb_value and hex.
+}
 }
 \usage{
 unibas_color_palette_overview

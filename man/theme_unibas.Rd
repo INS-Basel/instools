@@ -14,7 +14,7 @@ theme_unibas(base_theme = ggplot2::theme_minimal(), base_size = 12, ...)
 \item{...}{Further arguments passed to \code{ggplot2::theme()}}
 }
 \description{
-[ggplot2] plot theme based on colors of UNIBAS
+\link{ggplot2} plot theme based on colors of UNIBAS
 }
 \examples{
 library(ggplot2)
@@ -28,5 +28,5 @@ ggplot(df, aes(x, y, fill = x)) +
 
 }
 \seealso{
-[\code{ggplot2::theme}]
+\href{https://ggplot2.tidyverse.org/reference/theme.html}{\code{ggplot2::theme()}}
 }

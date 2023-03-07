@@ -15,6 +15,4 @@ Vector of palette name stubs or full names
 \description{
 Get names of all unique palettes provided in unibas
 }
-\examples{
-get_unibas_palettes()
-}
+\keyword{internal}
