@@ -7,7 +7,7 @@
 journal_format(x, n_break = 4, big.mark = ",", ...)
 }
 \arguments{
-\item{x}{an integer}
+\item{x}{an integer-vector}
 
 \item{n_break}{fix number where the formatting sets the break}
 

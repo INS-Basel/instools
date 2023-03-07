@@ -20,3 +20,10 @@ test_that("formatting works with (silly!!) bigmark", {
       " 4000",
       "50;;000"))
 })
+
+test_that("formatting fails with characters", {
+  test <- c("test")
+  expect_error(
+    journal_format(test, big.mark = ",")
+  )
+})

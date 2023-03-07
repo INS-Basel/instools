@@ -25,7 +25,8 @@ Imports:
     lattice,
     lme4,
     arm,
-    methods
+    methods,
+    checkmate
 Suggests:
     testthat
 Encoding: UTF-8
