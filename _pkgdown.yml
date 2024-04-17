@@ -27,3 +27,4 @@ reference:
   - get_model_dotplot
   - ggCaterpillar
   - journal_format
+  - complete_redcap_username
