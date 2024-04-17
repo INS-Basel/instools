@@ -79,7 +79,7 @@ Specific functions include:
 }
 \examples{
 library(ggplot2)
-library(hsrtools)
+library(instools)
 ggplot(diamonds[1:2000,], aes(x = cut, y = carat,
 color = cut)) +
 geom_point() +

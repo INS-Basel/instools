@@ -1,4 +1,4 @@
 library(testthat)
-library(hsrtools)
+library(instools)
 
-test_check("hsrtools")
+test_check("instools")

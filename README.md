@@ -1,17 +1,17 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# 📦 hsrtools - a collection of functions for health services research
+# 📦 instools - a collection of functions for health services research
 
 <!-- badges: start -->
 
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
-[![R-CMD-check](https://github.com/INS-Basel/hsrtools/workflows/R-CMD-check/badge.svg)](https://github.com/INS-Basel/hsrtools/actions)
-[![R-CMD-check](https://github.com/INS-Basel/hsrtools/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/INS-Basel/hsrtools/actions/workflows/R-CMD-check.yaml)
+[![R-CMD-check](https://github.com/INS-Basel/instools/workflows/R-CMD-check/badge.svg)](https://github.com/INS-Basel/instools/actions)
+[![R-CMD-check](https://github.com/INS-Basel/instools/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/INS-Basel/instools/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-The goal of {hsrtools} is to combine and share functions with potential
+The goal of {instools} is to combine and share functions with potential
 further use in one of the research projects at the Institute of Nursing
 Science at the University of Basel.
 
@@ -23,7 +23,7 @@ You can install the package from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("remotes")
-remotes::install_github("INS-Basel/hsrtools")
+remotes::install_github("INS-Basel/instools")
 ```
 
 ## Types of functions

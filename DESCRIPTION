@@ -1,17 +1,16 @@
-Package: hsrtools
+Package: instools
 Type: Package
-Title: A Collection of Tools for Health Services Research at INS
-Version: 0.0.4.9000
+Title: A Collection of Tools for Research at INS
+Version: 0.0.5
 Authors@R: c(
     person("Catherine", "Blatter", email = "catherine.blatter@unibas.ch", 
     role = c("aut", "cre"),
     comment = c(ORCID = "0000-0002-4069-7178")))
-Description: hsrtools is a collection of code tools written for and used in health services 
-    research-studies at INS.
-URL: https://github.com/INS-Basel/hsrtools/,
-    https://ins-basel.github.io/hsrtools,
-    https://ins-basel.github.io/hsrtools/
-BugReports: https://github.com/INS-Basel/hsrtools/issues
+Description: instools is a collection of code tools written for and used in research work at INS.
+URL: https://github.com/INS-Basel/instools/,
+    https://ins-basel.github.io/instools,
+    https://ins-basel.github.io/instools/
+BugReports: https://github.com/INS-Basel/instools/issues
 License: MIT + file LICENSE
 Imports: 
     dplyr,

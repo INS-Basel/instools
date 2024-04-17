@@ -29,7 +29,7 @@ NULL
 #' @export
 #' @examples
 #' library(ggplot2)
-#' library(hsrtools)
+#' library(instools)
 #' ggplot(diamonds[1:2000,], aes(x = cut, y = carat,
 #' color = cut)) +
 #' geom_point() +
@@ -158,7 +158,7 @@ scale_fill_unibas_c <- function(palette = "unibas", ...) {
 get_unibas_palettes <- function(full = FALSE){
 
   re <- if (full) "^.*_pal(_op|_cont|_div)?$" else "^.*_pal$"
-  grep(re, getNamespaceExports("hsrtools"), value = TRUE)
+  grep(re, getNamespaceExports("instools"), value = TRUE)
 
 }
 
@@ -196,12 +196,12 @@ retrieve_palette <- function(name, type = c("base", "op", "div", "cont")){
   # attempt to get palette requested
   pal_base <- paste0(name, "_pal")
   pal_name <- if (type == "base") pal_base else paste0(name, "_pal_", type)
-  pal <- try(utils::getFromNamespace(pal_name, "hsrtools"))
+  pal <- try(utils::getFromNamespace(pal_name, "instools"))
 
   # if fails, attempt to use base palette
   # if (class(pal) == "try-error")
   if (methods::is(pal, "try-error")) {
-    pal <- try(utils::getFromNamespace(pal_base, "hsrtools"))
+    pal <- try(utils::getFromNamespace(pal_base, "instools"))
   }
 
   # if base fails, throw error
