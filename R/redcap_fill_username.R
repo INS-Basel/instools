@@ -63,5 +63,4 @@ utils::write.csv(dat,
 
 #' @seealso [fill_redcap_username()]
 #'
-#'
 complete_redcap_username <- redcap_fill_username
