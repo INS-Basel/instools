@@ -6,7 +6,7 @@
 #' Admins have the rights to add additional users to REDCap. The PI or data managers of a
 #' project is responsible to fill out the user form and send it via Email to the admin.
 #' The admin fills out the usernames according to a standardized rule (handle of the email-adress).
-#' When bulk-adding multiple users, this is tedious. This function fills completes the
+#' When bulk-adding multiple users, this is tedious. This function fills the
 #' user names automatically and saves the file as a .csv in the same directory as the
 #' supplied file.
 #'
