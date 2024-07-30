@@ -28,3 +28,4 @@ reference:
   - ggCaterpillar
   - journal_format
   - complete_redcap_username
+  - redcap_fill_username

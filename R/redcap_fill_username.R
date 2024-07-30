@@ -12,11 +12,13 @@
 #'
 #'
 #' @param which_file as standard REDCap user name list filled out with names and email addresses
+#' @param username_from_mail defaults to FALSE. Usernames should be build from First, Last Names. For backward-compatibility.
 #'
 #' @return a csv-file with suffix _completed.csv
 #' @export
 #'
-complete_redcap_username <- function(which_file = "latest"){
+redcap_fill_username <- function(which_file = "latest",
+                                 username_from_mail = FALSE){
 
 if (which_file == "latest") {
 
@@ -29,18 +31,37 @@ if (which_file == "latest") {
 # the na.strings="" is needed to be able to replace only missing usernames
 dat <- utils::read.csv(last_file,
                 check.names = F,
-                na.strings = "")
+                na.strings = "",
+                encoding = "Latin-1")
 
+# sanitize inputs
+dat$`First name` <- stringr::str_squish(dat$`First name`)
+dat$`Last name` <- stringr::str_squish(dat$`Last name`)
+
+
+if (username_from_mail) {
 # generate user names from email adresses
 dat$Username[is.na(dat$Username)] <- tolower(sub("@.*", "", dat[is.na(dat$Username), "Email address"]))
+} else {
+  dat$Username[is.na(dat$Username)] <- tolower(paste0(dat$`First name`, ".", dat$`Last name`))
+}
 
+
+# cleanup any possible empty rows in the csv
+dat <- dat[!is.na(dat$`First name`), ]
 
 # write new file out
 # the na="" character is needed, otherwise redcap complains as it does not
 # handle true missing values in the automatic upload
 utils::write.csv(dat,
-          file = paste0(sub("*.csv", "", last_file), "_completed.csv"),
+          file = paste0(sub("*.csv", "", last_file), "_filled.csv"),
           row.names = FALSE,
           na = "")
 
 }
+
+
+#' @seealso [fill_redcap_username()]
+#'
+#'
+complete_redcap_username <- redcap_fill_username
