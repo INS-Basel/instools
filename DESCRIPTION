@@ -1,7 +1,7 @@
 Package: instools
 Type: Package
 Title: A Collection of Tools for Research at INS
-Version: 0.0.5
+Version: 0.0.6
 Authors@R: c(
     person("Catherine", "Blatter", email = "catherine.blatter@unibas.ch", 
     role = c("aut", "cre"),
@@ -11,7 +11,7 @@ URL: https://github.com/INS-Basel/instools/,
     https://ins-basel.github.io/instools,
     https://ins-basel.github.io/instools/
 BugReports: https://github.com/INS-Basel/instools/issues
-License: MIT + file LICENSE
+License: file LICENSE
 Imports: 
     dplyr,
     forcats,
@@ -20,6 +20,7 @@ Imports:
     ggplot2,
     tibble,
     assertthat,
+    stringr,
     lubridate,
     lattice,
     lme4,
@@ -31,7 +32,7 @@ Suggests:
     testthat
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.1
 Roxygen: list(markdown = TRUE)
 Depends: 
     R (>= 2.10)

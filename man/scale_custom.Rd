@@ -68,13 +68,13 @@ Custom coloring and filling functions based on unique color palettes
 Specific functions include:
 \itemize{
 \item{\code{scale_(color/colour/fill)_unibas_d}
-{: Discrete palette with either fixed or dynamically extended number of shades}}
-\item{\code{scale_(color/colour/fill)_unibas_op}\\b
-{: Discrete palette with fixed colors for "good", "bad", and "neutral"}}
+: Discrete palette with either fixed or dynamically extended number of shades}
+\item{\code{scale_(color/colour/fill)_unibas_op}\
+: Discrete palette with fixed colors for "good", "bad", and "neutral"}
 \item{\code{scale_(color/colour/fill)_unibas_div}
-{: Continuous diverging color palette, must contain negative, neutral, positive values}}
+: Continuous diverging color palette, must contain negative, neutral, positive values}
 \item{\code{scale_(color/colour/fill)_unibas_c}
-{: Continuous color palette}}
+: Continuous color palette}
 }
 }
 \examples{
